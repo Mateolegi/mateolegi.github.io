@@ -1,0 +1,28 @@
+{
+  "name": "Mateo Leal",
+  "title": "Mateo Leal",
+  "version": "1.0",
+  "homepage": "https://mateolegi.github.io",
+  "author": "Mateo Leal",
+  "license": {
+    "type": "MIT",
+    "url": "https://github.com/Mateolegi/mateolegi.github.io/blob/MASTER/LICENSE"
+  },
+  "devDependencies": {
+    "bootstrap": "^3.3.7",
+    "browser-sync": "^2.13.0",
+    "font-awesome": "^4.6.3",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.0.10",
+    "gulp-header": "^1.8.7",
+    "gulp-less": "^3.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-uglify": "^1.5.4",
+    "jquery": "^1.11.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Mateolegi/mateolegi.github.io.git"
+  }
+}

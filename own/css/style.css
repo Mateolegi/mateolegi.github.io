@@ -1,0 +1,66 @@
+/**
+ * Google fonts
+ */
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,400i');
+
+header {
+  position: relative;
+  height: 662px;
+  background-image: url(../images/header-bg.jpg);
+  /*background-size: auto 662px;*/
+  /*background-repeat: no-repeat;*/
+  background-position: top center;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+.name {
+  position: absolute;
+  top: 50%;
+  margin-top: -100px;
+  text-align: center;
+  width: 100%;
+}
+
+.name > h1 {
+  color: #ecf0f1;
+  font-family: 'Raleway', sans-serif;
+  font-style: italic;
+  font-size: 7em;
+  text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
+  text-transform: uppercase;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background: #bdc3c7;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #95a5a6;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #7f8c8d;
+}
+::-webkit-scrollbar-track {
+  background: #666666;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-track:hover {
+  background: #666666;
+}
+::-webkit-scrollbar-track:active {
+  background: #333333;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}

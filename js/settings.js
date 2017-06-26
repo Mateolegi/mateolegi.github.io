@@ -45,13 +45,7 @@ function altura(){
 	$("#bannerRow").css({"min-height": altura+"px"})
 }
 
-
-
-function navBar(){
-
-}
-
-
+// 
 
 
 

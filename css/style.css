@@ -11,37 +11,26 @@
 	background-image:url("../img/webDesign-1.jpg");
 	background-repeat: no-repeat;	
 	background-size: cover;
-	background-position: center;	
+	background-position: center;
 }
 .texto{
 	display: flex;
-	width: 80%;
+	min-width: 100%;
 	height: 130px;
 	font-size: 70px;
 	line-height:130px;
 	overflow: hidden;
 	margin-top: 25px;
-
-	
-	position: absolute;
-	Top:40%;
-	right:0;
-	botom:0;
-	left:0;
-	margin:auto;
-	padding-left: 7%;
-
-
 }
 
+
+
+#contenedorBanner{
+	display: table-cell;
+	vertical-align: middle;
+}
 #texto-2{
 	font-weight: 300;
-	position: absolute;
-	position: absolute;
-	Top:33%;
-	right:0;
-	botom:0;
-	left:38%;
 	font-size: 2em;
 }
 
@@ -52,6 +41,8 @@
 
 #bannerRow{
 		background-color: rgba(0,0,0,0.7); 
+		min-width: 100%;
+		padding: 15%;
 }
 
 #animated-text{
@@ -150,17 +141,57 @@ p{
 /*<<--------------------Skill Section --------------->> */
 
 #skill{
-	background-color: #75A48B;
+	background-color: #fff;
+
 
 }
 
-#skill h2,.skillContainers h3{
-	color:white;
+#skill h2,.skillContainers h3,.skillContainers p{
+	color:black;
 }
 .skillContainers{
-	height: 400px;
+	height: 100%;
+	min-height: 400px;
 	padding: 5%;
+	background-color: #f3f3f3;
+	
 }
+/* <<-- Projects  -->>*/
+
+.descWorks{
+	padding: 5%;
+	padding-top:0; 
+
+}
+
+
+.descWorks p{
+	color:black;
+	font-weight: 100;
+	margin-bottom: 20px;
+}
+.descWorks h3{
+	font-size: 2em;
+	font-weight: 400;
+	margin-bottom: 20px;
+	
+}
+
+
+.descWorks button{
+	
+}
+
+.imgWorks{
+	opacity: .85;
+	transition: all .2s ease-in-out;	
+}
+.imgWorks:hover{
+	opacity: 1;
+	transform: scale(1.01);
+}
+
+
 
 /* << --------------- Footer --------------------->> */
 footer{
@@ -173,4 +204,4 @@ footer{
 
 
 
-/* <<------------------>> media queries <<------------------>> */
+

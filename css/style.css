@@ -1,6 +1,7 @@
 
 /*Fonts imports*/
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans:400,700|Roboto:300,400,500,700,900');
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700');
 
 *{
 	font-family: 'Roboto', sans-serif;
@@ -124,9 +125,10 @@ p{
 }
 
 .primary{
-	width: 50px;
-	border: solid 1px white;
-	border-radius: 15%
+	border-radius: 15%;
+	max-width:80%;
+	margin-bottom:35px ;
+	margin-top:35px ;
 }
 
 #aboutText{
@@ -139,31 +141,124 @@ p{
 
 
 /*<<--------------------Skill Section --------------->> */
-
 #skill{
 	background-color: #fff;
-
-
+	margin-top: 50px;
 }
 
-#skill h2,.skillContainers h3,.skillContainers p{
+.titles{
+	font-family: 'Raleway', sans-serif;
+	font-size: 3.5em;
+}
+
+#titleSkill p{
+	color:black;
+	font-size: 1.2em;
+	font-weight: 100;
+}
+
+#menuSkills{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.description{
+	list-style: none;
+	margin: 0px 25px ;
+	cursor: pointer;
+}
+
+
+.insideDiv{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: table;
+    transform: scale(.8);
+    border: solid 1.4px black;
+    margin-bottom: 0;
+
+}
+.insideDiv img{
+    width: 50%;
+    margin: 20px auto;
+    transition:all .2s ease-in; 
+}
+
+
+
+.unactive:hover{
+	background-color: #EBEBEB;
+}
+
+.unactive:hover img{
+	transform: scale(1.1);
+}
+
+.textMenu p{
+	color:black;
+	font-size: .8em;
+	font-weight: 500;
+	text-align: center;
+}
+
+#design p{
 	color:black;
 }
-.skillContainers{
-	height: 100%;
-	min-height: 400px;
-	padding: 5%;
-	background-color: #f3f3f3;
-	
+
+#design{
+	margin:5% 0px;
 }
-/* <<-- Projects  -->>*/
+
+#left-skill{
+	min-height: 400px;
+	background-image: url(../img/idk/placeholder.png); 
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat; 
+}
+
+#skillRight{
+	margin-top: 50px;
+	text-align:justify;
+}
+
+#skillRight h3{
+	font-size: 3em;
+	font-weight: 400;
+	text-transform: capitalize;
+	margin: 0px;
+
+}
+
+
+#skillRight p, #skillRight ul{
+	font-weight: 300;
+	margin: 50px 20px;
+	margin-left: 0px;
+	color: black;
+	text-transform: initial;
+}
+
+
+.unactive{
+	transition:all .2s ease-out; 
+}
+.active{
+	background-color: #2F9FCB;
+}
+
+
+
+
+
+/* <<------------------------ Projects  ------------------------------->>*/
 
 .descWorks{
 	padding: 5%;
 	padding-top:0; 
-
 }
-
 
 .descWorks p{
 	color:black;
@@ -171,10 +266,10 @@ p{
 	margin-bottom: 20px;
 }
 .descWorks h3{
+	font-family: 'Raleway', sans-serif;
 	font-size: 2em;
 	font-weight: 400;
-	margin-bottom: 20px;
-	
+	margin-bottom: 20px;	
 }
 
 
@@ -190,6 +285,34 @@ p{
 	opacity: 1;
 	transform: scale(1.01);
 }
+.btns{
+
+	border: 1px solid #333;
+    font-weight: 700;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    background: 0 0;
+    letter-spacing: 1px;
+
+	/*Border Radius*/
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+
+	/*Transition*/
+    -webkit-transition: all .s ease;
+    -moz-transition: all .s ease;
+    -o-transition: all .s ease;
+    transition: all .s ease;
+}
+
+.btns:hover{
+	background-color: grey;
+	color:white;
+}
+
+
 
 
 

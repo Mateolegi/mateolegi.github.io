@@ -13,23 +13,18 @@
 	background-repeat: no-repeat;	
 	background-size: cover;
 	background-position: center;
+	background-attachment: fixed;
 }
 .texto{
 	text-align: center;
 	display: flex;
 	font-size: 4em;
-/*	min-width: 100%;
-	height: 130px;
-
-	line-height:130px;
-	overflow: hidden;
-	margin-top: 25px;*/
 }
 
 
 
 #contenedorBanner{
-	margin-top: 15px;
+	margin-top: 2%;
 	display: table-cell;
 	vertical-align: middle;
 }
@@ -43,6 +38,21 @@
 	font-weight: 700;
 	font-size: 8em;
 }
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+	.main-text{
+		font-size: 4em;
+		text-align: center;
+		
+	}
+	#contenedorBanner{
+		transform: scale(1.3);
+	}
+}
+
+
 
 
 #bannerRow{
@@ -152,6 +162,7 @@ p{
 }
 
 .titles{
+	font-weight: 600;
 	font-family: 'Raleway', sans-serif;
 	font-size: 3.5em;
 }
@@ -221,6 +232,9 @@ p{
 	background-position: center;
 	background-size: contain;
 	background-repeat: no-repeat; 
+	transition: all .3s ease-in-out;
+	opacity: 0;
+	transform: translateX(40px);
 }
 
 #skillRight,#right-database{
@@ -272,8 +286,15 @@ p{
 	display: none;
 }
 
+/*<<---------------------------- Dont Care ----------------------------->>*/
+#dCare-container-fluid{
+	background-color: #2E9DC8;
+	min-height: 400px;
+}
 
-
+#dCare-row p{
+	color:black;
+}
 
 /* <<------------------------ Projects  ------------------------------->>*/
 

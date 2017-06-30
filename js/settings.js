@@ -1,9 +1,24 @@
+// Global Variables
+
+
 $(document).ready(function(){
 	altura();
-
-
   $("footer").footerReveal({zIndex: -101 });
 });
+
+
+
+/*
+*Esta funcion setea la altura minimo del banner
+*con respecto a la pantalla desde donde se vé
+*/
+
+function altura(){
+  var altura= $(window).height();
+  $("#bannerContainer").css({"min-height" : altura+"px"});
+  $("#bannerRow").css({"min-height": altura+"px"});
+}
+
 
  $("#sk1").click(function(){
   setear1();
@@ -16,9 +31,9 @@ $(document).ready(function(){
   $("#database").animateCss('fadeInRight');
  });
 
-
  $("#sk3").click(function(){
   setear3();
+  $("#backend").animateCss('fadeInLeft');
  });
 
 
@@ -47,20 +62,31 @@ $(window).scroll(function(){
         })
 
     }
+
+
+    landingElement();
 })
 
 
-
-/*
-*Esta funcion setea la altura minimo del banner
-*con respecto a la pantalla desde donde se vé
-*/
-
-function altura(){
-	var altura= $(window).height(); ;
-	$("#bannerContainer").css({"min-height" : altura+"px"});
-	$("#bannerRow").css({"min-height": altura+"px"})
+function landingElement(){
+    var wScroll = $(document).scrollTop();
+    var skill = $('#skill').offset().top - ($(window).height() * 0.2);
+    if(wScroll > skill ) {
+      $("#left-skill").css({
+          'transform': 'translateX(0)',
+          'opacity':1
+        });
+    }else{
+      $("#left-skill").css({
+        'transform': 'translateX(40px)',
+        'opacity' : 0
+     });  
+    }
 }
+
+
+
+
 
 // 
 
@@ -125,11 +151,14 @@ function setear1(){
 
 
 // Setting Content
-    $("#design").removeClass("show");
+    $("#design").removeClass("none");
     $("#database").removeClass("show");
+    $("#backend").removeClass("show");
+
 
     $("#design").addClass("show");
     $("#database").addClass("none");
+    $("#backend").addClass("none");
     
 
 }
@@ -146,9 +175,11 @@ function setear2(){
     // Setting Content
     $("#design").removeClass("show");
     $("#database").removeClass("none");
+    $("#backend").removeClass("show");
 
     $("#database").addClass("show");
     $("#design").addClass("none");
+    $("#backend").addClass("none");
     
 
 }
@@ -160,6 +191,15 @@ function setear3(){
     $("#c1").addClass("unactive");
     $("#c2").addClass("unactive");
     $("#c3").addClass("active");
+
+    // Setting Content
+    $("#design").removeClass("show");
+    $("#database").removeClass("show");
+    $("#backend").removeClass("none");
+
+    $("#backend").addClass("show");
+    $("#design").addClass("none");
+    $("#database").addClass("none");
 }
 
 

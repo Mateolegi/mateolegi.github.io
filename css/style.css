@@ -15,18 +15,21 @@
 	background-position: center;
 }
 .texto{
+	text-align: center;
 	display: flex;
-	min-width: 100%;
+	font-size: 4em;
+/*	min-width: 100%;
 	height: 130px;
-	font-size: 70px;
+
 	line-height:130px;
 	overflow: hidden;
-	margin-top: 25px;
+	margin-top: 25px;*/
 }
 
 
 
 #contenedorBanner{
+	margin-top: 15px;
 	display: table-cell;
 	vertical-align: middle;
 }
@@ -36,7 +39,9 @@
 }
 
 .main-text{
+	text-transform: uppercase;
 	font-weight: 700;
+	font-size: 8em;
 }
 
 
@@ -143,7 +148,7 @@ p{
 /*<<--------------------Skill Section --------------->> */
 #skill{
 	background-color: #fff;
-	margin-top: 50px;
+	padding-top: 50px;
 }
 
 .titles{
@@ -153,7 +158,6 @@ p{
 
 #titleSkill p{
 	color:black;
-	font-size: 1.2em;
 	font-weight: 100;
 }
 
@@ -207,7 +211,7 @@ p{
 	color:black;
 }
 
-#design{
+#design,#database{
 	margin:5% 0px;
 }
 
@@ -219,21 +223,18 @@ p{
 	background-repeat: no-repeat; 
 }
 
-#skillRight{
+#skillRight,#right-database{
 	margin-top: 50px;
-	text-align:justify;
 }
 
-#skillRight h3{
+#skillRight h3,#right-database h3{
 	font-size: 3em;
 	font-weight: 400;
-	text-transform: capitalize;
+	
 	margin: 0px;
-
 }
 
-
-#skillRight p, #skillRight ul{
+#skillRight p, #skillRight ul, #right-database p, #right-database ul{
 	font-weight: 300;
 	margin: 50px 20px;
 	margin-left: 0px;
@@ -250,10 +251,37 @@ p{
 }
 
 
+#left-database{
+	min-height: 400px;
+	background-image: url(../img/idk/server.jpg); 
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat; 
+}
+
+#right-database{
+	
+}
+
+
+.show{
+	display: block;
+}
+
+.none{
+	display: none;
+}
+
 
 
 
 /* <<------------------------ Projects  ------------------------------->>*/
+
+#works{
+	height: 100%;
+	background-color: #fff;
+	padding: 5% 0px;
+}
 
 .descWorks{
 	padding: 5%;
@@ -319,8 +347,20 @@ p{
 /* << --------------- Footer --------------------->> */
 footer{
 	background-color: #3A3A3A;
-	background-attachment: fixed;
 }
+#footer-section{
+	display: flex;
+	align-items: center;
+}
+
+#footer-section li{
+	list-style: none;
+	margin:0px 5px;
+}
+
+#footer-section a{
+	text-decoration: none;
+} 
 #footerRow{
 	padding: 5% 0px;
 }

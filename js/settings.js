@@ -1,6 +1,4 @@
 // Global Variables
-
-
 $(document).ready(function(){
 	altura();
   $("footer").footerReveal({zIndex: -101 });
@@ -39,32 +37,14 @@ function altura(){
 
 
 /*
-*Esta funcion permite dar valores de css 
+*Esta funcion permite dar valores de css
 *a la barra de navegacion cuando se hace scroll
 */
+
 var flag = true;
 $(window).scroll(function(){
-    var scroll = $(document).scrollTop();
-    if(scroll > 100){
-          $("#navContainer").css({
-            'opacity' : 1,
-            'border-bottom': 'solid 1px white',
-            "background-color" : '#CDCDCD',
-            // "background-color" : 'rgba(49,51,62,' + 0.7 + ')'
-          })
-
-  
-      }
-      else{
-        $("#navContainer").css({
-          "background-color" : 'rgba(0,0,0,' + 0.0 + ')',
-          'border-bottom': 0
-        })
-
-    }
-
-
     landingElement();
+		quoteAnimation();
 })
 
 
@@ -80,7 +60,7 @@ function landingElement(){
       $("#left-skill").css({
         'transform': 'translateX(40px)',
         'opacity' : 0
-     });  
+     });
     }
 }
 
@@ -88,7 +68,7 @@ function landingElement(){
 
 
 
-// 
+//
 
 
 
@@ -101,8 +81,8 @@ $('a[href*="#"]')
   .click(function(event) {
     // On-page links
     if (
-      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
-      && 
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+      &&
       location.hostname == this.hostname
     ) {
       // Figure out element to scroll to
@@ -138,7 +118,7 @@ $('a[href*="#"]')
  * this functions are using for setting the buttons by defoult
  * usig the skill navbar buttons
  ***************************************************************
- */ 
+ */
 
 function setear1(){
     $("#c1").removeClass("unactive");
@@ -159,7 +139,7 @@ function setear1(){
     $("#design").addClass("show");
     $("#database").addClass("none");
     $("#backend").addClass("none");
-    
+
 
 }
 function setear2(){
@@ -180,7 +160,7 @@ function setear2(){
     $("#database").addClass("show");
     $("#design").addClass("none");
     $("#backend").addClass("none");
-    
+
 
 }
 function setear3(){
@@ -204,12 +184,41 @@ function setear3(){
 
 
 
+function quoteAnimation(){
+	var wScroll = $(document).scrollTop();
+	var extra = $('#extraInfo').offset().top - ($(window).height() * 0.5);
+
+	if (wScroll > extra) {
+			$("#inside").css({
+          'transform': 'translateX(0)',
+          'opacity':1
+        });
+
+				$("#author").css({
+	          'transform': 'translateX(0)',
+	          'opacity':1
+	        });
+
+				console.log("in");
+	}else {
+		$("#inside").css({
+			'transform': 'translateX(40px)',
+			'opacity' : 0
+	 });
+
+	 $("#author").css({
+			 'transform': 'translateX(-50px)',
+			 'opacity':1
+		 });
+	}
+
+}
+
 /*
 *******************************************
-* Animate css code 
+* Animate css code
 **********************************************
 */
-
 $.fn.extend({
     animateCss: function (animationName) {
         var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';

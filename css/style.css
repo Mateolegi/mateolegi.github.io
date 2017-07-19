@@ -65,7 +65,7 @@ and (min-width : 1224px) {
 
 
 #bannerRow{
-		background-color: rgba(0,0,0,0.7);
+		background-color: rgba(43,41,56,0.7);
 		min-width: 100%;
 		padding: 15%;
 }
@@ -99,7 +99,7 @@ p{
 #mainNav{
 	z-index: 15;
 	border-bottom: 0px;
-	background-color: rgba(0,0,0,.0);
+	background-color: rgba(90,114,118,0);
 	transition: all .2s ease-in-out;
 }
 
@@ -158,6 +158,7 @@ p{
 	max-width:80%;
 	margin-bottom:35px ;
 	margin-top:35px ;
+	border-top: 1px solid rgba(0,0,0,.1);
 }
 
 #aboutText{
@@ -171,7 +172,7 @@ p{
 
 /*<<--------------------Skill Section --------------->> */
 #skill{
-	background-color: #fff;
+	background-color: #F3F3F4;
 	padding-top: 50px;
 	padding-bottom:50px;
 }
@@ -276,7 +277,7 @@ p{
 	transition:all .2s ease-out;
 }
 .active{
-	background-color: #2F9FCB;
+	background-color:rgba(29,18,35,.7);
 }
 
 
@@ -321,7 +322,7 @@ p{
 }
 
 #dCare-container-fluid{
-	background-color: rgba(90,114,118,.2);
+	background-color: rgba(49,51,62,.7);
 }
 
 #dCare-row{
@@ -359,12 +360,12 @@ p{
 #works{
 	height: 100%;
 	min-height: 100vh;
-	background-color: #fff;
+	background-color: #F3F3F4;
 	padding: 5% 0px;
 }
 
 .descWorks{
-	padding: 5%;
+	padding: 2%;
 	padding-top:0;
 }
 
@@ -409,10 +410,10 @@ p{
     border-radius: 3px;
 
 	/*Transition*/
-    -webkit-transition: all .s ease;
-    -moz-transition: all .s ease;
-    -o-transition: all .s ease;
-    transition: all .s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
 }
 
 .btns:hover{
@@ -423,29 +424,60 @@ p{
 
 /* << --------------- Footer --------------------->> */
 footer{
-	background-color: #3A3A3A;
+	background-color: #31333E;
 }
-#footer-section{
-	display: flex;
-
-	align-items: center;
-}
-
 #footer-section li{
 	list-style: none;
-	margin:0px 5px;
+	display: inline;
+	margin:0px 15px;
+
 }
 
 #footer-section a{
 	text-decoration: none;
+
+}
+
+#footer-section span{
+	font-size: 1.5em;
+	color:white;
+	transition: all .2s;
 }
 
 #footerRow{
 	padding: 5% 0px;
 }
 
-#copy p{
+#copy h3{
 	font-family: 'Roboto', sans-serif;
 	text-transform: capitalize;
 	font-weight :100;
+	color:white;
+	margin-left: 3%;
+}
+
+#copy p{
+	font-family: 'Roboto', sans-serif;
+	text-transform: initial;
+	font-weight :100;
+	color:white;
+	font-size: 1em;
+	margin-left: 3%;
+
+}
+
+
+#footer-section #uno:hover span{
+	color:#3B5998;
+
+}
+
+#footer-section #dos:hover span{
+	color:#00aced;
+
+}
+
+#footer-section #tres:hover span{
+	color:#767676;
+
 }

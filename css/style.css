@@ -1,6 +1,6 @@
 
 /*Fonts imports*/
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans:400,700|Roboto:300,400,500,700,900');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans:400,500,600,700|Roboto:300,400,500,700,900');
 @import url('https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700');
 
 *{
@@ -33,6 +33,9 @@
 	margin-top: 2%;
 	display: table-cell;
 	vertical-align: middle;
+	animation-delay: .3s;
+	animation-duration: .3s;
+
 }
 #texto-2{
 	font-weight: 300;
@@ -355,6 +358,7 @@ p{
 
 #works{
 	height: 100%;
+	min-height: 100vh;
 	background-color: #fff;
 	padding: 5% 0px;
 }
@@ -423,6 +427,7 @@ footer{
 }
 #footer-section{
 	display: flex;
+
 	align-items: center;
 }
 
@@ -434,6 +439,13 @@ footer{
 #footer-section a{
 	text-decoration: none;
 }
+
 #footerRow{
 	padding: 5% 0px;
+}
+
+#copy p{
+	font-family: 'Roboto', sans-serif;
+	text-transform: capitalize;
+	font-weight :100;
 }

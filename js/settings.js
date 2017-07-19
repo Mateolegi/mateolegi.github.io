@@ -50,7 +50,7 @@ $(window).scroll(function(){
 
 function landingElement(){
     var wScroll = $(document).scrollTop();
-    var skill = $('#skill').offset().top - ($(window).height() * 0.2);
+    var skill = $('#skill').offset().top - ($(window).height() * .3);
     if(wScroll > skill ) {
       $("#left-skill").css({
           'transform': 'translateX(0)',
@@ -186,7 +186,7 @@ function setear3(){
 
 function quoteAnimation(){
 	var wScroll = $(document).scrollTop();
-	var extra = $('#extraInfo').offset().top - ($(window).height() * 0.5);
+	var extra = $('#extraInfo').offset().top - ($(window).height() * .6);
 
 	if (wScroll > extra) {
 			$("#inside").css({

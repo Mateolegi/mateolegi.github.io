@@ -45,7 +45,30 @@ var flag = true;
 $(window).scroll(function(){
     landingElement();
 		quoteAnimation();
+    navbar();
 })
+
+function navbar(){
+  var wScroll = $(document).scrollTop();
+  var skill = $('#skill').offset().top - ($(window).height() * .1);
+
+
+  if (wScroll > (skill)){
+
+
+      $("#navContainer").css({ 
+        "background-color": "rgba(5,89,91,.7)",
+        "height": "50px"
+      });
+
+      $("#navbarCollapse").css({"padding-top" : "0px"});
+      $(".navbar-header").css({"padding-top" : "0px"});
+  }else{
+      $("#navContainer").css({ "background-color": "rgba(205,205,205,.0)"});
+      $("#navbarCollapse").css({"padding-top" : "20px"});
+      $(".navbar-header").css({"padding-top" : "20px"});
+  }
+}
 
 
 function landingElement(){
@@ -151,8 +174,6 @@ function quoteAnimation(){
 	          'transform': 'translateX(0)',
 	          'opacity':1
 	        });
-
-				console.log("in");
 	}else {
 		$("#inside").css({
 			'transform': 'translateX(40px)',

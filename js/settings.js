@@ -57,7 +57,7 @@ function navbar(){
 
 
       $("#navContainer").css({ 
-        "background-color": "rgba(5,89,91,.7)",
+        "background-color": "rgba(44,62,80,0.7)",
         "height": "50px"
       });
 

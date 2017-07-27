@@ -99,7 +99,7 @@ p{
 #mainNav{
 	z-index: 15;
 	border-bottom: 0px;
-	background-color: rgba(90,114,118,0);
+	background-color: rgba(44,62,80,0);
 	transition: all .2s ease-in-out;
 }
 .navbar-header{
@@ -287,7 +287,7 @@ p{
 	transition:all .2s ease-out;
 }
 .active{
-	background-color:rgba(5,89,91,.7);
+	background-color:rgba(48,160,126,.6);
 }
 
 
@@ -427,7 +427,7 @@ p{
 }
 
 .btns:hover{
-	background-color: grey;
+	background-color:rgba(48,160,126,.6);
 	color:white;
 }
 

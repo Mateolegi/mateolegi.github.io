@@ -1,8 +1,8 @@
 // Global Variables
 $(document).ready(function(){
 	altura();
-  $("footer").footerReveal({zIndex: -101 });
 });
+
 
 
 

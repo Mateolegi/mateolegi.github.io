@@ -433,22 +433,29 @@ p{
 
 
 /* << --------------- Footer --------------------->> */
-footer{
+#socialMedia{
 	background-color: #31333E;
 }
-#footer-section li{
+
+#footer-reveal{
+	background-color: #31333E;
+}
+
+
+.footer-section li{
 	list-style: none;
 	display: inline;
 	margin:0px 15px;
 
 }
 
-#footer-section a{
+.footer-section li a{
 	text-decoration: none;
+	color:white;
 
 }
 
-#footer-section span{
+.footer-section span{
 	font-size: 1.5em;
 	color:white;
 	transition: all .2s;
@@ -462,32 +469,43 @@ footer{
 	font-family: 'Roboto', sans-serif;
 	text-transform: capitalize;
 	font-weight :100;
-	color:white;
+	color:grey;
 	margin-left: 3%;
+	font-size: 1.2em;
 }
 
-#copy p{
+#spanPage{
+	color:white;
+	text-transform: lowercase;
+}
+
+#leyend{
 	font-family: 'Roboto', sans-serif;
 	text-transform: initial;
 	font-weight :100;
 	color:white;
 	font-size: 1em;
 	margin-left: 3%;
+	margin-bottom: 15px;
 
 }
 
+#fMenu{
+	margin-top:30px;
+}
 
-#footer-section #uno:hover span{
+
+.footer-section .uno:hover span{
 	color:#3B5998;
 
 }
 
-#footer-section #dos:hover span{
+.footer-section .dos:hover span{
 	color:#00aced;
 
 }
 
-#footer-section #tres:hover span{
+.footer-section .tres:hover span{
 	color:#767676;
 
 }

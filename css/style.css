@@ -50,7 +50,7 @@
 
 /* Desktops and laptops ----------- */
 @media only screen
-and (min-width : 1224px) {
+and (max-width : 1224px) {
 	.main-text{
 		font-size: 4em;
 		text-align: center;
@@ -61,8 +61,26 @@ and (min-width : 1224px) {
 	}
 }
 
+/*phone devices*/
 
+@media only screen and (max-width : 360px){
 
+	#texto-2{
+		font-weight: 300;
+		font-size: 2em;
+	}
+
+	.main-text{
+		font-size: 12px;
+		text-align: center;
+
+	}
+
+	#contenedorBanner{
+		width: 100%;
+		padding-top: 15%;
+	}
+}
 
 #bannerRow{
 		background-color: rgba(43,41,56,0.7);
@@ -70,12 +88,6 @@ and (min-width : 1224px) {
 		padding: 15%;
 }
 
-#animated-text{
-	list-style: none;
-	padding-left: 10px;
-	animation:cambiar 7s infinite ease-in-out;
-
-}
 
 #logoText{
 	color: grey;
@@ -135,26 +147,6 @@ p{
 
 #navContainer{
 	transition: all .2s ease-in-out;
-}
-
-/* <------------------Text Animation-------------> */
-
-@keyframes cambiar{
-	0%{ margin-top: 0; opacity: 1;}
-	20%{margin-top: 0; opacity: 1;}
-
-	25%{margin-top: 0px opacity: 1;}
-	40%{opacity: .2;}
-	50%{margin-top: -130px; opacity: 1}
-
-	55%{margin-top: -130px;}
-	80%{margin-top: -130px;}
-
-	85%{margin-top: -130px; opacity: 1;}
-	90%{opacity: .2;}
-	95%{margin-top: 0px; opacity: 1;}
-
-	100%{margin-top: 0px;}
 }
 
 
@@ -372,46 +364,45 @@ p{
 	min-height: 100vh;
 	background-color: #F3F3F4;
 	padding: 5% 0px;
-}
+}	
 
-.descWorks{
-	padding: 2%;
-	padding-top:0;
-}
+.content{
+	width: 100%;
+	max-height: 400px;
+	margin: 10px 10px;
+	cursor: pointer;
+ 	overflow: hidden;
+ 	opacity: .8;
 
-.descWorks p{
-	color:black;
-	font-weight: 100;
-	margin-bottom: 20px;
-}
-.descWorks h3{
-	font-family: 'Raleway', sans-serif;
-	font-size: 2em;
-	font-weight: 400;
-	margin-bottom: 20px;
-}
-
-
-.descWorks button{
+	/*Transition*/
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease;
 
 }
 
-.imgWorks{
-	opacity: .85;
-	transition: all .2s ease-in-out;
+.content:hover .btn{
+	background-color:rgba(48,160,126,.6);
+	color:white;
+	margin-top: -25px;
+	opacity: 1;
 }
-.imgWorks:hover{
+.content:hover{
 	opacity: 1;
 	transform: scale(1.01);
-}
-.btns{
 
+}
+.btn{
+	
 	border: 1px solid #333;
     font-weight: 700;
     padding: 5px 10px;
     text-transform: uppercase;
     background: 0 0;
     letter-spacing: 1px;
+    margin-top: -10px;
+    opacity: 0;
 
 	/*Border Radius*/
     -moz-border-radius: 3px;
@@ -424,11 +415,6 @@ p{
     -moz-transition: all .2s ease;
     -o-transition: all .2s ease;
     transition: all .2s ease;
-}
-
-.btns:hover{
-	background-color:rgba(48,160,126,.6);
-	color:white;
 }
 
 

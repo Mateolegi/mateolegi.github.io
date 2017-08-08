@@ -15,7 +15,7 @@
 	<title>Mateo Leal</title>
 </head>
 
-<body id="">
+<body id="page-top">
 
 		<!-- Navigation bar -->
 		    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
@@ -32,10 +32,10 @@
 				                        <a class="page-scroll menuItem" href="#skill">About</a>
 				                    </li>
 				                    <li>
-				                        <a class="page-scroll menuItem" href="#works">Portafolio</a>
+				                        <a class="page-scroll menuItem" href="#works">Portfolio</a>
 				                    </li>
 				                    <li>
-				                        <a class="page-scroll menuItem" href="#footerSection">Contact</a>
+				                        <a class="page-scroll menuItem" href="#socialMedia">Contact</a>
 				                    </li>
 				                </ul>
 				            </div>
@@ -75,7 +75,12 @@
 									<ul id="menuSkills" >
 										<li class="description" id="sk1">
 													<span class="insideDiv active" id="c1"><img src="img/icons/computer.svg" class="img-responsive"></span>
-													<span class="textMenu"><p>Design</p></span>
+													<span class="textMenu"><p>Front End</p></span>
+										</li>
+
+										<li class="description" id="sk3">
+												<span class="insideDiv unactive" id="c3"><img src="img/icons/file-code.svg" class="img-responsive"></span>
+												<span class="textMenu"><p>Backend</p></span>
 										</li>
 
 										<li class="description" id="sk2">
@@ -83,10 +88,7 @@
 												<span class="textMenu"><p>Database</p></span>
 										</li>
 
-										<li class="description" id="sk3">
-												<span class="insideDiv unactive" id="c3"><img src="img/icons/file-code.svg" class="img-responsive"></span>
-												<span class="textMenu"><p>Backend</p></span>
-										</li>
+								
 
 									</ul>
 							</div>
@@ -171,7 +173,8 @@
 			<div class="container">
 				<div class="row">
 						<div class="col-md-12 text-center" >
-							<h3 class="titles">Portafolio</h3>
+							<h3 class="titles">My latest work</h3>
+							<p id="title-paragraph">Take a look at some of my recent projects.</p>
 							<hr class="primary">
 						</div>
 				</div>
@@ -179,10 +182,10 @@
 			<div class="container">
 				<div class="row">
 
-
-					<div class="col-md-4 col-sm-12">
+					<div class="col-md-4 col-sm-12" id="contentWrap">
 						<div class="content text-center">
 							<img src="img/about/1.jpg" class="img-responsive">
+							<h3 class="project-name">Lorem ipsum.</h3>
 							<span class="btn">View more</span>
 						</div>
 					</div>
@@ -190,6 +193,7 @@
 					<div class="col-md-4 col-sm-12">
 						<div class="content text-center">
 							<img src="img/about/2.jpg" class="img-responsive">
+							<h3 class="project-name">Lorem ipsum.</h3>
 							<span class="btn">View more</span>
 						</div>
 					</div>
@@ -197,14 +201,13 @@
 					<div class="col-md-4 col-sm-12">
 						<div class="content text-center">
 							<img src="img/about/4.jpg" class="img-responsive">
+							<h3 class="project-name">Lorem ipsum.</h3>
 							<span class="btn">View more</span>
 						</div>
 					</div>
 
-
-
-			
 				</div>
+			</div>
 			</div>
 
 		</section>
@@ -221,19 +224,19 @@
 								</ul>
 									
 								<ul class="footer-section" id="fMenu">
-									<li><a href="#skill" class="page-scroll">About</a></li>
-									<li><a href="#works" class="page-scroll">Portafolio</a></li>
-									<li><a href="#page-top" class="page-scroll">Home</a></li>
+									<li><a href="#skill" class="page-scroll menuItem">About</a></li>
+									<li><a href="#works" class="page-scroll menuItem">Portfolio</a></li>
+									<li><a href="#page-top" class="page-scroll menuItem">Home</a></li>
 								</ul>
 						</div>
 					</div>
 			</div>
 		<footer id="footer-reveal">	
-		<div class="container-fluid">
-				<div class="col-md-12 text-center" id="copy">
-					<h3>&copy; Mateo Leal. All Rights Reserved. 2017</h3>
-				</div>
-		</div>					
+			<div class="container-fluid">
+					<div class="col-md-12 text-center" id="copy">
+						<h3>&copy; Mateo Leal. All Rights Reserved. 2017</h3>
+					</div>
+			</div>					
 		</footer>
 
 
@@ -243,7 +246,6 @@
 <!-- main js code -->
 	<script src="js/settings.js"></script>
 	<script src="js/navBar.js"></script>
-
 
 <!-- Animate css -->
 	<script src="js/animations/animaciones.js"></script>

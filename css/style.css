@@ -45,13 +45,13 @@
 .main-text{
 	text-transform: uppercase;
 	font-weight: 700;
-	font-size: 8em;
+	font-size: 5.5em;
 }
 
 #bannerRow{
-		background-color: rgba(43,41,56,0.7);
-		min-width: 100%;
-		padding: 15%;
+	background-color: rgba(43,41,56,0.7);
+	min-width: 100%;
+	padding: 15%;
 }
 
 

@@ -7,6 +7,10 @@
 	font-family: 'Roboto', sans-serif;
 	/*font-family: 'Noto Sans', sans-serif;*/
 }
+#page-top{
+	margin-bottom: 30vh;
+	background-color: #F3F3F4;
+}
 
 #pageWrap{
 	padding: 0;
@@ -329,10 +333,6 @@ p{
 	transform: translateX(-50px);
 }
 
-
-
-
-
 /* <<------------------------ Projects  ------------------------------->>*/
 
 #works{
@@ -421,12 +421,6 @@ p{
 
 
 /* << --------------- Footer --------------------->> */
-#socialMedia,#footer-reveal{
-	background-color: #31333E;
-	max-height: 15vh;
-	padding-top:2%;
-}
-
 
 .footer-section li{
 	list-style: none;
@@ -446,9 +440,6 @@ p{
 	transition: all .2s;
 }
 
-#footerRow{
-	
-}
 
 #copy h3{
 	font-family: 'Roboto', sans-serif;
@@ -495,7 +486,16 @@ p{
 
 }
 
-
+footer{
+	max-height: 30vh;
+	background: black;
+	background-color: #31333E;
+	padding: 40px 0;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	z-index: -1; 
+}
 
 /*Media Queries*/
 

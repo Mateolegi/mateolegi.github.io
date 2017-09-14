@@ -159,7 +159,6 @@ p{
 	font-size: 3.5em;
 	margin-bottom: 10px;
 }
-
 #title-paragraph{
 	color:black;
 	font-weight: 100;
@@ -178,7 +177,7 @@ p{
 
 .title-paragraph{
 	position: absolute;
-	margin-top: -190px;
+	margin-top: -200px;
 	opacity: 0;
 	transition: all .2s ease-out;
 }
@@ -278,7 +277,7 @@ p{
 	transition:all .2s ease-out;
 }
 .active{
-	background-color:rgba(48,160,126,.6);
+	background-color:rgba(9, 33, 64,.4);
 }
 
 
@@ -288,10 +287,6 @@ p{
 	background-position: center;
 	background-size: contain;
 	background-repeat: no-repeat;
-}
-
-#right-backend{
-
 }
 
 #left-backend{
@@ -364,7 +359,7 @@ p{
 .content{
 	width: 100%;
 	margin: 10px 10px;
-	cursor: pointer;
+	/* cursor: pointer; */
  	overflow: hidden;
 	background-color: rgba(0,0,0,1);
 
@@ -390,22 +385,30 @@ p{
 }
 
 .content:hover .btn{
-	background-color:rgba(49,51,62,.9);
 	color:white;
-	margin-top: -140px;
 	opacity: 1;
 }
 
 
+.btn:hover{
+	/* border-color: #2e6da4; */
+	transform: scale(.99);
+	background-color:rgba(42, 58, 63,.9);
+	
+	
+}
+
+
 .btn{
-	border: 1px solid #333;
+	
+	border: 2px solid #2A3A3F;	
     font-weight: 700;
     padding: 5px 10px;
     text-transform: uppercase;
     background: 0 0;
     letter-spacing: 1px;
-    margin-top: -120px;
-    opacity: 0;
+	opacity: 0;
+	margin-top:2%;
 
 	/*Border Radius*/
     -moz-border-radius: 3px;
@@ -432,7 +435,7 @@ p{
 
 
 .content:hover .title-paragraph{
-	margin-top: -200px;
+	margin-top: -220px;
 	opacity: 1;
 }
 

@@ -44,21 +44,20 @@ $(window).scroll(function() {
 
 function navbar() {
   var wScroll = $(document).scrollTop();
-  var skill = $('#skill').offset().top - ($(window).height() * .1);
+  var skill = $('#skill').offset().top - ($(window).height() * .2);
 
   if (wScroll > skill){
-    $("#navContainer").css({ 
-      "background-color": "rgba(44,62,80,0.7)",
-      "height": "50px"
-    });
-    $("#navbarCollapse").css({"padding-top" : "0px"});
-    $(".navbar-header").css({"padding-top" : "0px"});
+    $("#burguerIcon").css({"color" : "#888"});
   } else {
-    $("#navContainer").css({ "background-color": "rgba(205,205,205,.0)"});
-    $("#navbarCollapse").css({"padding-top" : "20px"});
-    $(".navbar-header").css({"padding-top" : "20px"});
+    $("#burguerIcon").css({"color" : "#f3f3f3"});
   }
 }
+
+$("#menu-toggle").click(function(e) {
+    e.preventDefault();
+    $("#wrapper").toggleClass("toggled");
+    $(".wrapContainer").toggleClass("buttonToggled");
+});
 
 function landingElement() {
   var wScroll = $(document).scrollTop();

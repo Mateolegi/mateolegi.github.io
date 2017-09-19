@@ -4,6 +4,7 @@
 
 	<!-- Main links  -->
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/menuIcons/menuIcons.css">
 	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/fonts/style.css">
 
@@ -19,27 +20,27 @@
 
 <body id="page-top">
 
-	<!-- Navigation bar -->
-	<nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
-		<div class="container-fluid" id="navContainer">
-			<div class="container">
-				<!-- Brand and toggle get grouped for better mobile display -->
-				<div class="navbar-header">
-					<a class="navbar-brand page-scroll" href="#bannerContainer" id="menuButton"><!-- <span class="glyphicon glyphicon-option-horizontal"></span> --></a>
-				</div>
-				<div class="collapse navbar-collapse" id="navbarCollapse">
-					<ul class="nav navbar-nav navbar-right">
-						<li><a class="page-scroll menuItem" href="#skill">About</a></li>
-						<li><a class="page-scroll menuItem" href="#works">Portfolio</a></li>
-						<li><a class="page-scroll menuItem" href="#socialMedia">Contact</a></li>
-					</ul>
-				</div>
-				<!-- /.navbar-collapse -->
-			</div>
-		</div>
-		<!-- /.container-fluid -->
-	</nav>
 
+	<div class="nav-button wrapContainer">
+		<p class="button" id="menu-toggle"><span id="burguerIcon" class="icon-menu"></span></p>
+	</div>
+
+	<div id="wrapper">
+		<div id="sidebar-wrapper">
+
+			<ul class="sidebar-nav">
+				<li class="sidebar-brand"><p>Menu</p></li>
+				<li> <a href="#page-top" class="page-scroll menuItem ">Home</a></li>
+				<li> <a href="#skill"   class="page-scroll menuItem">About</a></li>
+				<li> <a href="#works" 	class="page-scroll menuItem">Portfolio</a></li>
+			</ul>
+
+		</div>
+
+	</div>
+
+
+<div class="wrapContainer">
 	<!-- Banner -->
 	<div class="container-fluid" id="bannerContainer">
 		<div class="row" id="bannerRow">
@@ -191,10 +192,9 @@
 
 						</div>
 					</div>
-
 			</div>
-
 		</div>
+		
 	</section>
 
 	<!-- Footer -->
@@ -208,11 +208,6 @@
 						<li class="dos"><a href="#"><span class="icon-twitter"></span></a></li>
 						<li class="tres"><a href="#"><span class="icon-github"></span></a></li>
 					</ul>
-					<ul class="footer-section" id="fMenu">
-						<li><a href="#skill" class="page-scroll menuItem">About</a></li>
-						<li><a href="#works" class="page-scroll menuItem">Portfolio</a></li>
-						<li><a href="#page-top" class="page-scroll menuItem">Home</a></li>
-					</ul>
 				</div>
 			</div>
 		</div>
@@ -224,6 +219,7 @@
 			</div>
 		</footer>
 
+</div><!-- </wrap container -->
 	<!-- Bootstrap Script -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
 			integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"

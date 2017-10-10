@@ -91,7 +91,7 @@ p{
 
 #menu-toggle{
 	cursor: pointer;
-	align-items: center;	
+	align-items: center;
 }
 
 #menu-toggle span{
@@ -100,7 +100,9 @@ p{
 	color:#f3f3f3;
 	font-size: 28px;
 	font-weight: 100;
-	
+
+	transition: all 0.2s ease-in-out;
+
 }
 
 .buttonToggled{
@@ -122,11 +124,11 @@ p{
 	-o-transition: all .3s;
 	transition: all .3s;
   }
-  
+
   #wrapper.toggled {
 	padding-left: 150px;
   }
-  
+
   #sidebar-wrapper {
 	z-index: 10;
 	position: fixed;
@@ -136,45 +138,47 @@ p{
 	background-color: #f3f3f3;
 	margin-right: -150px;
 	overflow-y: auto;
+	box-shadow: 2px 1px 20px 0px rgba(9, 33, 64,.3);
+
 	-webkit-transition: all 0.3s ease;
 	-moz-transition: all 0.3s ease;
 	-o-transition: all 0.3s ease;
 	transition: all 0.3s ease;
   }
-  
+
   #wrapper.toggled #sidebar-wrapper {
 	width: 150px;
   }
-  
+
   #page-content-wrapper {
 	width: 100%;
 	position: absolute;
 	padding: 15px;
   }
-  
+
   #wrapper.toggled #page-content-wrapper {
 	position: absolute;
 	margin-right: -150px;
   }
-  
-  
+
+
   /* Sidebar Styles */
 
-    
+
   .sidebar-nav {
 	position: absolute;
 	width: 100%;
 	margin: 0;
-	padding: 10px 0px; 
+	padding: 10px 0px;
 	list-style: none;
   }
-  
+
   .sidebar-nav li {
 	width: 100%;
 	text-indent: 20px;
 	line-height: 40px;
   }
-  
+
   .sidebar-nav li a {
 	font-size: 16px;
 	display: block;
@@ -182,17 +186,17 @@ p{
 	color: #757575;
 	width: 100%;
   }
-  
+
   .sidebar-nav li a:hover {
 	text-decoration: none;
 	color: #fff;
 	background: rgba(232, 82, 82, 0.20);
   }
-  
+
   .sidebar-nav li a:active, .sidebar-nav li a:focus {
 	text-decoration: none;
   }
-  
+
   .sidebar-nav>.sidebar-brand {
 	text-transform: capitalize;
 	height: 65px;
@@ -200,16 +204,16 @@ p{
 	font-weight: 100;
 	line-height: 60px;
   }
-  
+
   .sidebar-nav>.sidebar-brand p {
 	color: #999999;
   }
-  
+
   .sidebar-nav>.sidebar-brand a:hover {
 	color: #fff;
 	background: none;
   }
-  
+
   @media(min-width:768px) {
 	#wrapper {
 	  padding-right: 0;
@@ -463,6 +467,9 @@ p{
 	min-height: 100vh;
 	background-color: #F3F3F4;
 	padding: 5% 0px;
+
+	transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
 }
 
 .content{
@@ -503,14 +510,14 @@ p{
 	/* border-color: #2e6da4; */
 	transform: scale(.99);
 	background-color:rgba(42, 58, 63,.9);
-	
-	
+
+
 }
 
 
 .btn{
-	
-	border: 2px solid #2A3A3F;	
+
+	border: 2px solid #2A3A3F;
     font-weight: 700;
     padding: 5px 10px;
     text-transform: uppercase;

@@ -14,4 +14,4 @@ Creado y mantenido por **[Mateo Leal](https://mateolegi.github.io/)**.
 
 ## Derechos de autor y licencia
 
-Copyright 2017 Mateo Leal. Code released under the [MIT](https://github.com/Mateolegi/mateolegi.github.io/blob/MASTER/LICENSE) license.
+Copyright 2017 Mateo Leal. Code released under the [MIT](https://github.com/Mateolegi/mateolegi.github.io/blob/master/LICENSE) license.
